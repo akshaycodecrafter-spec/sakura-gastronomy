@@ -2,7 +2,7 @@
 
 A single-page concept site for a fictional fine-dining restaurant in Tokyo that blends Japanese kaiseki tradition with Chinese fine dining.
 
-🔗 **Live:** [REPLACE_WITH_ACTUAL_URL]
+🔗 **Live:** https://sakura-gastronomy.akshaycodecrafter.workers.dev/
 
 ## Preview
 
