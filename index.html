@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>天華 Sakura — Japanese & Chinese Gastronomy</title>
+<meta name="description" content="Sakura (天華) is a Japanese and Chinese gastronomy restaurant in Tokyo, offering kaiseki, dim sum, and omakase tasting experiences that unite two culinary traditions on a single plate.">
+<meta property="og:title" content="天華 Sakura — Japanese & Chinese Gastronomy">
+<meta property="og:description" content="Sakura (天華) is a Japanese and Chinese gastronomy restaurant in Tokyo, offering kaiseki, dim sum, and omakase tasting experiences that unite two culinary traditions on a single plate.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍜</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#products" onclick="closeMenu()">Menu</a>
+  <a href="#about" onclick="closeMenu()">Philosophy</a>
+  <a href="#features" onclick="closeMenu()">Process</a>
+  <a href="#reviews" onclick="closeMenu()">Reviews</a>
+  <a href="#contact" onclick="closeMenu()">Reservations</a>
+  <a href="#contact" class="nav-btn" onclick="closeMenu()">Book Table →</a>
+</div>
+
+<nav id="nav">
+  <div class="nav-logo"><span class="kanji">天華</span> SAKURA</div>
+  <ul class="nav-links">
+    <li><a href="#products">Menu</a></li>
+    <li><a href="#about">Philosophy</a></li>
+    <li><a href="#features">Process</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Reservations</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:20px;">
+    <a href="#contact" class="nav-btn">Book Table <span class="btn-arrow">→</span></a>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <canvas id="particleCanvas"></canvas>
+  <div class="hero-ghost">天華</div>
+  <div class="hero-line"></div>
+  <div class="hero-vertical">Japanese & Chinese Gastronomy</div>
+  <div class="hero-top">
+    <div class="hero-top-label">Est. 2026 · Tokyo</div>
+    <div class="hero-top-tag">Kaiseki · Dim Sum · Omakase</div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">天華 · Two Cultures, One Plate</div>
+    <h1 class="hero-heading">
+      <span class="kanji-line">天華</span>
+      Where Japan<br>
+      <span class="line2">Meets China.</span>
+    </h1>
+    <div class="hero-bottom">
+      <p class="hero-desc">Centuries of Japanese precision and Chinese depth united on a single plate. Every ingredient respected, every tradition honored, every flavor elevated.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn-primary">Explore Menu <span class="btn-arrow">→</span></a>
+        <a href="#contact" class="btn-ghost">Reserve <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <div class="scroll-line"></div>
+    <span class="scroll-text">Scroll</span>
+  </div>
+</section>
+
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marqueeTrack">
+    <div class="marquee-item">Sushi · Dim Sum</div>
+    <div class="marquee-item">Kaiseki · Peking Duck</div>
+    <div class="marquee-item">Wagyu · Mapo Tofu</div>
+    <div class="marquee-item">Sake · Baijiu</div>
+    <div class="marquee-item">Tempura · Xiaolongbao</div>
+    <div class="marquee-item">Matcha · Oolong</div>
+    <div class="marquee-item">Rare Vintages</div>
+    <div class="marquee-item">Sushi · Dim Sum</div>
+    <div class="marquee-item">Kaiseki · Peking Duck</div>
+    <div class="marquee-item">Wagyu · Mapo Tofu</div>
+    <div class="marquee-item">Sake · Baijiu</div>
+    <div class="marquee-item">Tempura · Xiaolongbao</div>
+    <div class="marquee-item">Matcha · Oolong</div>
+    <div class="marquee-item">Rare Vintages</div>
+  </div>
+</div>
+
+<section id="products">
+  <div class="products-header reveal">
+    <div>
+      <div class="section-eyebrow">The Experience</div>
+      <div class="section-title">Two Traditions<br><span class="kanji-sub">One Perfection</span></div>
+      <div class="section-divider"></div>
+    </div>
+    <p class="products-header-right">Three signature journeys through the finest of Japanese and Chinese culinary arts. Each experience is a dialogue between two ancient cultures.</p>
+  </div>
+  <div class="products-grid">
+    <div class="product-card reveal">
+      <div class="product-badge">Japan</div>
+      <div class="product-num">001</div>
+      <div class="product-img-wrap">
+        <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=800&q=80" alt="Kaiseki">
+      </div>
+      <h3 class="product-name">The <span>Kaiseki</span></h3>
+      <p class="product-desc">A multi-course pilgrimage through Japan's micro-seasons. Each dish tells a story of time and place, prepared with generations-honed precision.</p>
+      <a href="#" class="product-link">View Menu <span class="product-link-arrow">→</span></a>
+      <div class="product-ghost-num">01</div>
+    </div>
+    <div class="product-card reveal reveal-d1">
+      <div class="product-badge">China</div>
+      <div class="product-num">002</div>
+      <div class="product-img-wrap">
+        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80" alt="Imperial Chinese Cuisine">
+      </div>
+      <h3 class="product-name">The <span>Imperial</span></h3>
+      <p class="product-desc">An opulent journey through China's imperial kitchens. Peking duck carved tableside, hand-pulled noodles, and dim sum perfected over centuries.</p>
+      <a href="#" class="product-link">View Menu <span class="product-link-arrow">→</span></a>
+      <div class="product-ghost-num">02</div>
+    </div>
+    <div class="product-card reveal reveal-d2">
+      <div class="product-badge">Fusion</div>
+      <div class="product-num">003</div>
+      <div class="product-img-wrap">
+        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80" alt="Omakase Teppanyaki">
+      </div>
+      <h3 class="product-name">The <span>Omakase</span></h3>
+      <p class="product-desc">An intimate counter experience where Japanese itamae and Chinese wok mastery converge. No menus — only the finest seasonal ingredients speak.</p>
+      <a href="#" class="product-link">Enquire <span class="product-link-arrow">→</span></a>
+      <div class="product-ghost-num">03</div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about-left">
+    <div class="about-label reveal section-eyebrow">Our Philosophy</div>
+    <h2 class="about-heading section-title reveal reveal-d1">East Meets<br><span class="thin">East.</span></h2>
+    <div class="section-divider"></div>
+    <p class="about-body reveal reveal-d2">Sakura was born from a radical idea: that Japanese and Chinese cuisines are not opposites, but reflections. Japan's precision and restraint. China's depth and generosity. Together, they form a complete culinary universe.<br><br>We honor both traditions by understanding their souls. Our chefs have trained in Kyoto and Chengdu, Tokyo and Hong Kong. Every plate is a conversation across centuries.</p>
+    <div class="about-tags reveal reveal-d3">
+      <span class="about-tag">Kaiseki</span>
+      <span class="about-tag">Dim Sum</span>
+      <span class="about-tag">Binchotan</span>
+      <span class="about-tag">Wok Hei</span>
+      <span class="about-tag">Zero Waste</span>
+      <span class="about-tag">Rare Tea</span>
+    </div>
+  </div>
+  <div class="about-right">
+    <div class="about-main-img reveal">
+        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=80" alt="Master Chef">
+    </div>
+    <div class="stats-grid reveal reveal-d1">
+      <div class="stat-box">
+        <div class="stat-number" data-count="3">0</div>
+        <div class="stat-label">Michelin Stars</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number" data-count="18">0</div>
+        <div class="stat-label">Course Tasting</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number" data-count="250">0</div>
+        <div class="stat-label">Sake & Tea Labels</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number" data-count="5">0</div>
+        <div class="stat-label">% Waste</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="features-header">
+    <div>
+      <div class="section-eyebrow reveal">The Art</div>
+      <h2 class="section-title reveal reveal-d1">Crafted Across<br>Two Worlds</h2>
+      <div class="section-divider"></div>
+    </div>
+    <p class="features-header-right reveal reveal-d1">Every technique, every ingredient, every detail is chosen from the finest of both traditions. We build bridges, not walls, between two of the world's greatest cuisines.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-cell reveal">
+      <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=600&q=80" class="feature-bg" alt="Knife Work">
+      <div class="feature-cell-content">
+        <div class="feature-cell-num">01</div>
+        <h3 class="feature-cell-title">Knife & Wok</h3>
+        <p class="feature-cell-desc">Japanese precision cutting meets the explosive energy of wok hei. Two philosophies of fire and blade, united in our open kitchen.</p>
+      </div>
+      <div class="feature-cell-bar"></div>
+    </div>
+    <div class="feature-cell reveal reveal-d1">
+      <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" class="feature-bg" alt="Fermentation">
+      <div class="feature-cell-content">
+        <div class="feature-cell-num">02</div>
+        <h3 class="feature-cell-title">Fermentation</h3>
+        <p class="feature-cell-desc">Miso and koji from Japan. Douchi and fermented bean curd from China. Our cellar bridges two ancient traditions of umami.</p>
+      </div>
+      <div class="feature-cell-bar"></div>
+    </div>
+    <div class="feature-cell reveal reveal-d2">
+      <img src="https://images.unsplash.com/photo-1615937657715-bc7b4b7962c1?auto=format&fit=crop&w=600&q=80" class="feature-bg" alt="Charcoal Fire">
+      <div class="feature-cell-content">
+        <div class="feature-cell-num">03</div>
+        <h3 class="feature-cell-title">Binchotan & Wok</h3>
+        <p class="feature-cell-desc">Japanese white charcoal at 1,000°C meets the seasoned wok at 500°C. Two heats, two souls, one kitchen.</p>
+      </div>
+      <div class="feature-cell-bar"></div>
+    </div>
+    <div class="feature-cell reveal reveal-d1">
+      <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=80" class="feature-bg" alt="Tea Ceremony">
+      <div class="feature-cell-content">
+        <div class="feature-cell-num">04</div>
+        <h3 class="feature-cell-title">Tea & Spirit</h3>
+        <p class="feature-cell-desc">Matcha ceremony meets Chinese gongfu tea service. Rare Japanese sake alongside aged Chinese baijiu and Huangjiu.</p>
+      </div>
+      <div class="feature-cell-bar"></div>
+    </div>
+    <div class="feature-cell reveal reveal-d2">
+      <img src="https://images.unsplash.com/photo-1506224477000-07aa8a76be20?auto=format&fit=crop&w=600&q=80" class="feature-bg" alt="Garden">
+      <div class="feature-cell-content">
+        <div class="feature-cell-num">05</div>
+        <h3 class="feature-cell-title">Seasonal Soul</h3>
+        <p class="feature-cell-desc">Japan's shun and China's shi-ling — both celebrate the fleeting beauty of each season. Our menu changes daily with nature's rhythm.</p>
+      </div>
+      <div class="feature-cell-bar"></div>
+    </div>
+    <div class="feature-cell reveal reveal-d3">
+      <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80" class="feature-bg" alt="Precision">
+      <div class="feature-cell-content">
+        <div class="feature-cell-num">06</div>
+        <h3 class="feature-cell-title">Harmony</h3>
+        <p class="feature-cell-desc">The final plate balances Japanese minimalism with Chinese abundance. Every dish is a meditation on harmony between two worlds.</p>
+      </div>
+      <div class="feature-cell-bar"></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="reviews-intro">
+    <div>
+      <div class="section-eyebrow reveal">The Critics</div>
+      <h2 class="section-title reveal reveal-d1">Worldwide<br>Acclaim</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="reviews-count reveal">World's 50 Best — 2026</div>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card reveal">
+      <div class="review-rating">
+        <div class="review-star"></div><div class="review-star"></div><div class="review-star"></div>
+      </div>
+      <p class="review-text">"Sakura achieves what no restaurant has before — a genuine dialogue between Japan and China on a single plate. The kaiseki-dumpling course alone is worth the journey to Tokyo."</p>
+      <div class="review-divider"></div>
+      <div class="review-author">
+        <div class="review-avatar">GGA</div>
+        <div>
+          <div class="review-name">Global Gourmet Awards</div>
+          <div class="review-role">3 Stars, 2026</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal reveal-d1">
+      <div class="review-rating">
+        <div class="review-star"></div><div class="review-star"></div><div class="review-star"></div><div class="review-star"></div><div class="review-star"></div>
+      </div>
+      <p class="review-text">"The ambition of Sakura is matched only by its execution. The Peking duck aged in miso is revelatory. This is the most exciting restaurant in Asia."</p>
+      <div class="review-divider"></div>
+      <div class="review-author">
+        <div class="review-avatar">CW</div>
+        <div>
+          <div class="review-name">Culinary Weekly</div>
+          <div class="review-role">Top Table, 2026</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal reveal-d2">
+      <div class="review-rating">
+        <div class="review-star"></div><div class="review-star"></div><div class="review-star"></div><div class="review-star"></div><div class="review-star"></div>
+      </div>
+      <p class="review-text">"I've eaten at the finest restaurants from Kyoto to Shanghai. Sakura is the first to truly understand both cultures at their deepest level. Extraordinary."</p>
+      <div class="review-divider"></div>
+      <div class="review-author">
+        <div class="review-avatar">FDJ</div>
+        <div>
+          <div class="review-name">Fine Dine Journal</div>
+          <div class="review-role">Editor's Choice</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-left">
+    <div class="section-eyebrow reveal">Reservations</div>
+    <h2 class="contact-heading section-title reveal reveal-d1">Secure Your<br>Table</h2>
+    <div class="section-divider"></div>
+    <p class="contact-sub reveal reveal-d2">Reservations open 30 days in advance at 10:00 AM JST. For private omakase and chef's table experiences, please submit your request below.</p>
+    <div class="contact-info reveal reveal-d3">
+      <div class="contact-info-item">
+        <span class="ci-label">Location</span>
+        <span class="ci-value">Minato City, Tokyo</span>
+      </div>
+      <div class="contact-info-item">
+        <span class="ci-label">Service</span>
+        <span class="ci-value">Dinner Only · Wed – Sun</span>
+      </div>
+      <div class="contact-info-item">
+        <span class="ci-label">Dress</span>
+        <span class="ci-value">Smart · Dark Tones</span>
+      </div>
+    </div>
+  </div>
+  <div class="contact-right reveal reveal-d1">
+    <form class="contact-form" onsubmit="return false;">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" autocomplete="off">
+        </div>
+        <div class="form-field">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" autocomplete="off">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field full">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" autocomplete="off">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="date">Requested Date</label>
+          <input type="text" id="date" autocomplete="off">
+        </div>
+        <div class="form-field">
+          <label for="guests">Guests</label>
+          <input type="number" id="guests" min="1" max="8" autocomplete="off">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field full">
+          <label for="message">Notes / Allergies</label>
+          <textarea id="message"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="form-submit">
+        <span>Request Reservation</span>
+        <span class="submit-arrow">→</span>
+      </button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <div class="footer-logo"><span class="kanji">天華</span> SAKURA</div>
+    <p class="footer-tagline">Where Japanese precision meets Chinese depth. Two cultures, one plate, infinite flavor.</p>
+    <div class="footer-socials">
+      <a href="#" class="footer-social" title="Instagram">IG</a>
+      <a href="#" class="footer-social" title="WeChat">微</a>
+      <a href="#" class="footer-social" title="X">𝕏</a>
+    </div>
+  </div>
+  <div>
+    <div class="footer-col-title">Dining</div>
+    <ul class="footer-col-links">
+      <li><a href="#">Kaiseki Menu →</a></li>
+      <li><a href="#">Imperial Menu →</a></li>
+      <li><a href="#">Omakase →</a></li>
+      <li><a href="#">Tea Pairings →</a></li>
+    </ul>
+  </div>
+  <div>
+    <div class="footer-col-title">Sakura</div>
+    <ul class="footer-col-links">
+      <li><a href="#">Our Story →</a></li>
+      <li><a href="#">The Chefs →</a></li>
+      <li><a href="#">Press →</a></li>
+      <li><a href="#">Careers →</a></li>
+    </ul>
+  </div>
+  <div>
+    <div class="footer-col-title">Visit</div>
+    <ul class="footer-col-links">
+      <li><a href="#">Reservations →</a></li>
+      <li><a href="#">Private Dining →</a></li>
+      <li><a href="#">Location →</a></li>
+      <li><a href="#">Contact →</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <div class="footer-copy">© 2026 天華 Sakura Dining. All rights reserved.</div>
+  <div class="footer-bottom-right">Tokyo, JP · 東京</div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
